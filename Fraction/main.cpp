@@ -66,9 +66,17 @@ public:
 		this->denominator = other.denominator;
 		return *this;
 	}
+
+	//				Methods:
+	void print()
+	{
+		cout << "Integer = " << integer << "\tNumerator = " << numerator << "\tDenominator = " << denominator << endl;
+	}
 };
 
 void main()
 {
 	setlocale(LC_ALL, "");
+	Fraction A;
+	A.print();
 }
