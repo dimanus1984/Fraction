@@ -70,13 +70,13 @@ public:
 	//				Methods:
 	void print()
 	{
-		cout << "Integer = " << integer << "\tNumerator = " << numerator << "\tDenominator = " << denominator << endl;
+		cout << integer << "(" << numerator << "/" << denominator << ")" << endl;
 	}
 };
 
 void main()
 {
 	setlocale(LC_ALL, "");
-	Fraction A;
+	Fraction A(3, 2, 5);
 	A.print();
 }
