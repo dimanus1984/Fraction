@@ -253,9 +253,12 @@ void main()
 	Point A(2.3, 4.5);
 	Point B(2.7, 3.14);
 	cout << delimiter << endl;
-	Point C = A + B;
+	A += B;
+	A.print();
 	cout << delimiter << endl;
+	Point C = A + B;
 	C.print();
+	cout << delimiter << endl;
 	Point D = A - B;
 	D.print();
 	cout << delimiter << endl;
