@@ -139,7 +139,7 @@ public:
 		integer--;
 		return *this;
 	}
-	Fraction operator--(int)
+	Fraction operator--(int)	//Postfix decriment
 	{
 		Fraction old = *this;
 		integer--;
@@ -159,13 +159,13 @@ public:
 		numerator %= denominator;
 		return *this;
 	}
-	Fraction inverted()
+	Fraction inverted()		//Инвертируем дробь
 	{
 		to_improper();
 		Fraction inverted(denominator, numerator);
 		return inverted;
 	}
-	Fraction& reduce()
+	Fraction& reduce()		//Сокращаем дробь
 	{
 		if (numerator == 0)return *this;
 		int more, less, rest;
