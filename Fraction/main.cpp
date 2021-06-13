@@ -168,17 +168,17 @@ public:
 	Fraction& reduce()		//Сокращаем дробь
 	{
 		if (numerator == 0)return *this;
-		int more, less, rest;
+		int more, less, residue;
 		//Выясняем кто больше, числитель, или знаменатель:
 		if (numerator > denominator)more = numerator, less = denominator;
 		else less = numerator, more = denominator;
 		//Находим наибольший общий делитель:
 		do
 		{
-			rest = more % less;
+			residue = more % less;
 			more = less;
-			less = rest;
-		} while (rest);
+			less = residue;
+		} while (residue);
 		//В more сохраняется GCD - наибольший общий делитель
 		int GCD = more;
 		//Сокращаем дробь
@@ -278,6 +278,15 @@ ostream& operator<<(ostream& os, const Fraction& obj)
 	if (obj.get_integer() && obj.get_numerator())cout << ")";
 	if (obj.get_integer() == 0 && obj.get_numerator() == 0)cout << 0;
 	return os;
+}
+istream& operator>>(istream is, Fraction& obj)
+{
+	int numerator, denominator, integer;
+	is >> integer >> numerator >> denominator;
+	obj.set_integer(integer);
+	obj.set_numerator(numerator);
+	obj.set_denominator(denominator);
+	return is;
 }
 
 void main()
