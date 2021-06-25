@@ -206,6 +206,7 @@ void main()
 
 	Student stud("Тупенко", "Василий", 18, "РПО", "BV_123", 43.4);
 	stud.print();
+
 	Teacher Albert("Einstein", "Albert", 90, "Astophisics", 50);
 	Albert.print();
 
