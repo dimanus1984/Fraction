@@ -33,7 +33,10 @@ public:
 	}
 	void set_age(unsigned int age)
 	{
-		this->age = age;
+		if (age >= 18 && age <= 100)
+			this->age = age;
+		else
+			this->age = 0;
 	}
 	//Constructors:
 	Human(const string& last_name, const string& first_name, unsigned int age)
@@ -82,7 +85,12 @@ public:
 	}
 	void set_rating(double rating)
 	{
-		this->rating = rating;
+		if (rating >= 0 && rating <= 100)
+			this->rating = rating;
+		else
+			this->rating = 100;
+		if (this->rating >= 20)
+			cout << "Good rating!" << endl;
 	}
 	//Constructors:
 	Student
@@ -104,7 +112,8 @@ public:
 	void print()
 	{
 		Human::print();
-		cout << "Специальность: " << specialty << ", группа: " << group << ", успеваемость: " << rating << endl;
+		cout << "Специальность: " << specialty << ", группа: " << group;
+		cout << ", успеваемость: " << rating << (rating >= 50 ? " Good rating" : "") << endl;
 	}
 };
 
@@ -127,7 +136,12 @@ public:
 	}
 	void set_experience(unsigned int experience)
 	{
-		this->experience = experience;
+		if (experience > 0 && experience <= 100)
+			this->experience = experience;
+		else
+			this->experience = 100;
+		if (this->experience >= 20)
+			cout << "Teacher experience Good!" << endl;
 	}
 	//Constructors:
 	Teacher
@@ -148,7 +162,8 @@ public:
 	void print()
 	{
 		Human::print();
-		cout << "Специальность: " << specialty << ", опыт преподавания: " << experience << " лет" << endl;
+		cout << "Специальность: " << specialty;
+		cout << ", Опыт преподавания: " << experience << " лет" << (experience >= 20 ? " Best experience" : "") << endl;
 	}
 };
 
@@ -181,7 +196,7 @@ public:
 	void print()
 	{
 		Student::print();
-		cout << "Тема дипломного проеекта: " << diploma_project << endl;
+		cout << "Тема дипломного проекта: " << diploma_project << endl;
 	}
 };
 
@@ -191,9 +206,9 @@ void main()
 
 	Student stud("Тупенко", "Василий", 18, "РПО", "BV_123", 43.4);
 	stud.print();
-	Teacher Albert("Einstein", "Albert", 150, "Astophisics", 120);
+	Teacher Albert("Einstein", "Albert", 90, "Astophisics", 50);
 	Albert.print();
 
-	Graduate Dima("Nuss", "Dmitriy", 37, "C++ software development", "DIM_05", 100, "Class Graduate");
+	Graduate Dima("Nuss", "Dmitriy", 37, "C++ software development", "DIM_05", 95, "Class Graduate");
 	Dima.print();
 }
