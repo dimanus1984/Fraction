@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 using std::cin;
@@ -50,7 +50,7 @@ public:
 	//Methods:
 	void print()
 	{
-		cout << last_name << " " << first_name << " " << age << " ëåò." << endl;
+		cout << last_name << " " << first_name << " " << age << " Ð»ÐµÑ‚." << endl;
 	}
 };
 
@@ -104,7 +104,7 @@ public:
 	void print()
 	{
 		Human::print();
-		cout << "Ñïåöèàëüíîñòü: " << specialty << ", ãðóïïà: " << group << ", óñïåâàåìîñòü: " << rating << endl;
+		cout << "Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ: " << specialty << ", Ð³Ñ€ÑƒÐ¿Ð¿Ð°: " << group << ", ÑƒÑÐ¿ÐµÐ²Ð°ÐµÐ¼Ð¾ÑÑ‚ÑŒ: " << rating << endl;
 	}
 };
 
@@ -148,13 +148,13 @@ public:
 	void print()
 	{
 		Human::print();
-		cout << "Ñïåöèàëüíîñòü: " << specialty << ", îïûò ïðåïîäàâàíèÿ: " << experience << " ëåò" << endl;
+		cout << "Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ: " << specialty << ", Ð¾Ð¿Ñ‹Ñ‚ Ð¿Ñ€ÐµÐ¿Ð¾Ð´Ð°Ð²Ð°Ð½Ð¸Ñ: " << experience << " Ð»ÐµÑ‚" << endl;
 	}
 };
 
 class Graduate :public Student
 {
-	string diploma_project;	//Òåìà äèïëîìíîãî ïðîåêòà.
+	string diploma_project;	//Ð¢ÐµÐ¼Ð° Ð´Ð¸Ð¿Ð»Ð¾Ð¼Ð½Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð°.
 public:
 	const string& get_diploma_project()const
 	{
@@ -166,7 +166,7 @@ public:
 	}
 	Graduate
 	(
-		const string& last_name, const string& first_name, unsigned int age,	//Àòðèáóòû áàçîâîãî êëàññà
+		const string& last_name, const string& first_name, unsigned int age,	//ÐÑ‚Ñ€Ð¸Ð±ÑƒÑ‚Ñ‹ Ð±Ð°Ð·Ð¾Ð²Ð¾Ð³Ð¾ ÐºÐ»Ð°ÑÑÐ°
 		const string& speciality, const string& group, double rating,
 		const string& diploma_project
 	) :Student(last_name, first_name, age, speciality, group, rating),
@@ -181,7 +181,7 @@ public:
 	void print()
 	{
 		Student::print();
-		cout << "Òåìà äèïëîìíîãî ïðîååêòà: " << diploma_project << endl;
+		cout << "Ð¢ÐµÐ¼Ð° Ð´Ð¸Ð¿Ð»Ð¾Ð¼Ð½Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾ÐµÐµÐºÑ‚Ð°: " << diploma_project << endl;
 	}
 };
 
@@ -189,7 +189,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	Student stud("Òóïåíêî", "Âàñèëèé", 18, "ÐÏÎ", "BV_123", 43.4);
+	Student stud("Ð¢ÑƒÐ¿ÐµÐ½ÐºÐ¾", "Ð’Ð°ÑÐ¸Ð»Ð¸Ð¹", 18, "Ð ÐŸÐž", "BV_123", 43.4);
 	stud.print();
 	Teacher Albert("Einstein", "Albert", 150, "Astophisics", 120);
 	Albert.print();
