@@ -154,7 +154,7 @@ public:
 
 class Graduate :public Student
 {
-	string diploma_project;	//Тема дипломного проекта.
+	string diploma_project;
 public:
 	const string& get_diploma_project()const
 	{
@@ -166,7 +166,7 @@ public:
 	}
 	Graduate
 	(
-		const string& last_name, const string& first_name, unsigned int age,	//Атрибуты базового класса
+		const string& last_name, const string& first_name, unsigned int age,
 		const string& speciality, const string& group, double rating,
 		const string& diploma_project
 	) :Student(last_name, first_name, age, speciality, group, rating),
