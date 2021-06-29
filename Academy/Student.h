@@ -22,3 +22,5 @@ public:
 	//Methods:
 	void print();
 };
+
+ostream& operator<<(ostream& os, const Student& obj);

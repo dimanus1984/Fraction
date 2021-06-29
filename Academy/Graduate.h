@@ -15,3 +15,5 @@ public:
 	~Graduate();
 	void print();
 };
+
+ostream& operator<<(ostream& os, const Graduate& obj);

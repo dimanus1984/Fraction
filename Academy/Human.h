@@ -30,3 +30,5 @@ public:
 	//Methods:
 	virtual void print();
 };
+
+ostream& operator<<(ostream& os, const Human& obj);

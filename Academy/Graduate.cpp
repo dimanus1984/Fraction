@@ -24,6 +24,11 @@ Graduate::~Graduate()
 }
 void Graduate::print()
 {
-	Student::print();
-	cout << "Тема дипломного проекта: " << diploma_project << endl;
+	//Student::print();
+	//cout << "Тема дипломного проекта: " << diploma_project << endl;
+}
+
+ostream& operator<<(ostream& os, const Graduate& obj)
+{
+	return os << (Student&)obj << "\nТема диплома: " << obj.get_diploma_project();
 }
