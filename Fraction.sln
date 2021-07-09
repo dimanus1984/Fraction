@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometric_figures", "Geomet
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Triangle", "Triangle\Triangle.vcxproj", "{856274A9-3352-407F-AF85-C40F5B911038}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForwardList", "ForwardList\ForwardList.vcxproj", "{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{856274A9-3352-407F-AF85-C40F5B911038}.Release|x64.Build.0 = Release|x64
 		{856274A9-3352-407F-AF85-C40F5B911038}.Release|x86.ActiveCfg = Release|Win32
 		{856274A9-3352-407F-AF85-C40F5B911038}.Release|x86.Build.0 = Release|Win32
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Debug|x64.ActiveCfg = Debug|x64
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Debug|x64.Build.0 = Debug|x64
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Debug|x86.ActiveCfg = Debug|Win32
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Debug|x86.Build.0 = Debug|Win32
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Release|x64.ActiveCfg = Release|x64
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Release|x64.Build.0 = Release|x64
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Release|x86.ActiveCfg = Release|Win32
+		{555CEADE-E0D9-4C55-BBCC-E55F1934BCCF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

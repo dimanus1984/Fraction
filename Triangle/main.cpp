@@ -529,15 +529,15 @@ void main()
 	Geometry::Rectangle rectangle(Geometry::Color::console_green, 2, 4);
 	rectangle.info();
 
-	Geometry::Circle circle(Geometry::Color::yellow, 50, 300, 300);
+	Geometry::Circle circle(Geometry::Color::yellow, 50, 500, 300);
 	circle.info();
 
-	Geometry::EquilateralTriangle equil_triangle(Geometry::Color::green, 100, 300, 420);
+	Geometry::EquilateralTriangle equil_triangle(Geometry::Color::green, 100, 500, 420);
 	equil_triangle.info();
 
-	Geometry::IsoscelesTriangle isosceles_triangle(Geometry::Color::red, 80, 60, 320, 550);
+	Geometry::IsoscelesTriangle isosceles_triangle(Geometry::Color::red, 80, 60, 520, 550);
 	isosceles_triangle.info();
 
-	Geometry::RightTriangle right_triangle(Geometry::Color::blue, 100, 100, 320, 650);
+	Geometry::RightTriangle right_triangle(Geometry::Color::blue, 100, 100, 500, 650);
 	right_triangle.info();
 }
