@@ -96,11 +96,11 @@ public:
 	/*========================================================================================================================*/
 	void pop_back()
 	{
-		Element* Temp = Head;
-		while (Temp->pNext->pNext != nullptr)
-			Temp = Temp->pNext;			// Переход на следующий элемент
-		delete Temp->pNext;
-		Temp->pNext = nullptr;
+		Element* del_element = Head;
+		while (del_element->pNext->pNext != nullptr)
+			del_element = del_element->pNext;			// Переход на следующий элемент
+		delete del_element->pNext;
+		del_element->pNext = nullptr;
 	}
 	/*=======================================================================================================================*/
 	void erase(int Index)						// Удаляет значение из списка по индексу.
